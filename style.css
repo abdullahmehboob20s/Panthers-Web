@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #212428;
+  overflow-x: hidden;
+}
+
+:root {
+  scroll-behavior: smooth;
+
+  --fs-50px: 50px;
+  --fs-18px: 18px;
+  --fs-14px: 14px;
+  --fs-36px: 36px;
+  --fs-16px: 16px;
+  --fs-30px: 30px;
+  --fs-20px: 20px;
+
+  --purple: #403f83;
+  --purple-2: #8364e2;
+  --gray: #a2a2a2;
+
+  --primary-color-rgb: 64, 63, 131;
+  --secondary-color-rgb: 131, 100, 226;
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+.fs-50px {
+  font-size: var(--fs-50px);
+}
+.fs-18px {
+  font-size: var(--fs-18px);
+}
+.fs-14px {
+  font-size: var(--fs-14px);
+}
+.fs-36px {
+  font-size: var(--fs-36px);
+}
+.fs-16px {
+  font-size: var(--fs-16px);
+}
+.fs-30px {
+  font-size: var(--fs-30px);
+}
+.fs-20px {
+  font-size: var(--fs-20px);
+}
+
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+.purple {
+  color: var(--purple);
+}
+.purple-2 {
+  color: var(--purple-2);
+}
+.gray {
+  color: var(--gray);
+}
+
+/* font-weights */
+.weight-9 {
+  font-weight: 900;
+}
+.weight-8 {
+  font-weight: 800;
+}
+.weight-7 {
+  font-weight: 700;
+}
+.weight-6 {
+  font-weight: 600;
+}
+.weight-5 {
+  font-weight: 500;
+}
+.weight-4 {
+  font-weight: 400;
+}
+.weight-3 {
+  font-weight: 300;
+}
+
+/* margins */
+.mb-5px {
+  margin-bottom: 5px;
+}
+.mb-10px {
+  margin-bottom: 10px;
+}
+.mb-15px {
+  margin-bottom: 15px;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}
+.mb-25px {
+  margin-bottom: clamp(5px, 1.7361111111111112vw, 25px);
+}
+.mb-30px {
+  margin-bottom: clamp(18px, 2.0833333333333335vw, 30px);
+}
+.mb-35px {
+  margin-bottom: 35px;
+}
+.mb-40px {
+  margin-bottom: 40px;
+}
+.mb-45px {
+  margin-bottom: 45px;
+}
+.mb-50px {
+  margin-bottom: clamp(20px, 3.4722222222222223vw, 50px);
+}
+.mb-55px {
+  margin-bottom: 55px;
+}
+.mb-60px {
+  margin-bottom: clamp(40px, 4.166666666666667vw, 60px);
+}
+.mb-70px {
+  margin-bottom: clamp(40px, 4.861111111111111vw, 70px);
+}
+.mb-75px {
+  margin-bottom: clamp(35px, 5.208333333333333vw, 75px);
+}
+.mb-80px {
+  margin-bottom: 80px;
+}
+.mb-100px {
+  margin-bottom: clamp(40px, 6.944444444444445vw, 100px);
+}
+.mb-150px {
+  margin-bottom: clamp(80px, 10.416666666666666vw, 150px);
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/* paddings */
+.py-30px {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-50px {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py-70px {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.py-100px {
+  padding-top: clamp(50px, 6.944444444444445vw, 100px);
+  padding-bottom: clamp(50px, 6.944444444444445vw, 100px);
+}
+.py-200px {
+  padding-top: clamp(50px, 13.88888888888889vw, 200px);
+  padding-bottom: clamp(50px, 13.88888888888889vw, 200px);
+}
+
+/*  */
+
+.container-wrapper {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.w-fit-content {
+  width: fit-content;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.hover-btn {
+  transition: 0.3s;
+}
+
+.hover-btn:hover {
+  box-shadow: 2px 2px 20px 0px rgba(var(--secondary-color-rgb), 0.5);
+}
+
+.relative {
+  position: relative;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ============================================================================================================================ */
+/* ============================================================================================================================ */
+/* ========================================================= MAIN CSS =========================================================  */
+/* ============================================================================================================================ */
+/* ============================================================================================================================ */
+
+/* NAVBAR STARTS === */
+nav {
+  height: 90px;
+  background-color: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10000000;
+  transition: all 0.3s ease;
+}
+
+nav.scrolled {
+  box-shadow: 0 4px 20px 0 rgb(10 10 10 / 80%);
+  background: rgba(33, 36, 40, 0.9);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-btn {
+  padding: 6px 20px !important;
+  background-color: var(--purple-2);
+  -webkit-border-radius: 30px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 0;
+  height: 2px;
+  background-color: #8364e2;
+  width: 0%;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* NAVBAR ENDS === */
+
+/* HERO STARTS === */
+header {
+  background: url(https://panthernfts.com/images/background/8.jpg) center bottom /
+    cover;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.hero-right img {
+  width: 100%;
+}
+
+.hero-btn {
+  background-color: var(--purple-2);
+
+  text-align: center;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  outline: 0;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 40px;
+}
+
+.hero-nft-details {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* HERO ENDS === */
+
+/* SOCIAL LINKS STARTS === */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-links > a {
+  width: 15%;
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 30%);
+  padding: 30px;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.social-links > a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+/* SOCIAL LINKS ENDS === */
+
+/* NFT CARDS STARTS ===== */
+
+/* .nft-cards {
+  border: 2px solid red;
+} */
+
+.nft-card {
+  border: none;
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+  padding: 2rem 20px;
+  -webkit-border-radius: 15px;
+  transition: 0.7s;
+  background-color: #26292d;
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  overflow: hidden;
+}
+
+.nft-card img {
+  width: 100%;
+
+  -webkit-box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 40%);
+  -webkit-border-radius: 8px;
+  transition: 0.7s;
+
+  user-select: none;
+}
+
+.nft-card:hover img {
+  transform: scale(1.03);
+}
+
+.nft-card-button-next img,
+.nft-card-button-prev img {
+  width: 20px;
+  filter: invert(1);
+}
+.nft-card-button-next,
+.nft-card-button-prev {
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  background: #212428;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+
+  border: solid 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.nft-card-button-next:hover,
+.nft-card-button-prev:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.nft-card-button-prev {
+  left: -22px;
+  z-index: 10;
+}
+
+.nft-card-button-next {
+  right: -22px;
+  z-index: 10;
+}
+
+.nft-card-button-next img {
+  transform: rotate(180deg);
+}
+/* NFT CARDS ENDS ===== */
+
+/* ROADMAP STARTS */
+.roadmap-card {
+  max-width: 966px;
+  width: 100%;
+
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  background: rgba(255, 255, 255, 0.025);
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.roadmap-card-center {
+  flex: 1;
+}
+
+.roadmap-card-left {
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.roadmap-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmap-arrow {
+  height: 48px !important;
+  width: 48px !important;
+  -webkit-border-radius: 100%;
+  position: relative;
+
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  background: rgba(255, 255, 255, 0.025);
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--purple-2);
+}
+
+/* ROADMAP ENDS */
+
+/* ABOUT US STARTS === */
+.aboutus-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  justify-content: center;
+  gap: 1.8rem;
+}
+.aboutus-card {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 30%);
+  background: #212428;
+  -webkit-border-radius: 6px;
+  padding: 50px;
+  transition: 0.7s;
+}
+
+.aboutus-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.aboutus-card.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.aboutus-card-icon {
+  width: fit-content;
+  display: block;
+  margin-left: auto !important;
+}
+
+.disc-text {
+  transition: 0.7s;
+}
+
+.aboutus-card:hover .disc-text {
+  color: white;
+}
+/* ABOUT US ENDS ==== */
+
+/* FAQ STARTS */
+.link-parent {
+  width: 100%;
+}
+.link {
+  background: white;
+  padding: 16px 20px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  transition: all 0.2s ease;
+}
+
+.link svg {
+  transition: all 0.2s ease;
+}
+
+.link.active {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.link.active svg {
+  transform: rotate(180deg);
+}
+
+.link-accordion {
+  height: 0;
+  color: var(--gray);
+  transition: height 0.2s ease;
+  overflow-y: hidden;
+
+  background: #21273e;
+  border-color: #292f45;
+}
+
+.link-accordion-content {
+  padding: 1rem 2rem;
+}
+
+.accordion li {
+  line-height: 30px;
+}
+
+/* FAQ ENDS */
+
+/* FOOTER STARTS */
+footer {
+  background: rgba(255, 255, 255, 0.025);
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.footer-twitter {
+  width: 34px;
+  height: 34px;
+  background-color: var(--purple);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.footer-twitter:hover {
+  background-color: white;
+  color: var(--purple);
+}
+/* FOOTER ENDS */
